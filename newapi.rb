@@ -5,21 +5,21 @@
 class Newapi < Formula
   desc "CLI for new-api gateways"
   homepage "https://github.com/Xbang0222/new-api-cli"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Xbang0222/new-api-cli/releases/download/v0.1.0/new-api-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "0cc6a3821ce4551bbc88df7ee9c47f7679c1a67fe5bc8df1bbc1b3b732e3936e"
+      url "https://github.com/Xbang0222/new-api-cli/releases/download/v0.1.1/new-api-cli_0.1.1_darwin_amd64.tar.gz"
+      sha256 "56b0d14d485fbc0520c61b8575a2c5e325a53e168d128b82651e4ab7bd73c8ad"
 
       define_method(:install) do
         bin.install "newapi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Xbang0222/new-api-cli/releases/download/v0.1.0/new-api-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "ca656e38f9106c5f1a405d2de8b70405aec90a23888b7bcedfc8dea00e47c549"
+      url "https://github.com/Xbang0222/new-api-cli/releases/download/v0.1.1/new-api-cli_0.1.1_darwin_arm64.tar.gz"
+      sha256 "e1cd2ae0724624ff356bb91b48a9e66707a0f473bad3f61b72c47533839a98d0"
 
       define_method(:install) do
         bin.install "newapi"
@@ -29,15 +29,15 @@ class Newapi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Xbang0222/new-api-cli/releases/download/v0.1.0/new-api-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "1fe15e563e09fe19537590d6c7af5b56bbe269050aa1db8a31a6f4e1fbcd145b"
+      url "https://github.com/Xbang0222/new-api-cli/releases/download/v0.1.1/new-api-cli_0.1.1_linux_amd64.tar.gz"
+      sha256 "c22d0185d16a088c9cd958f37d8470c5cae2da835bcaaa6d071658cfcc286bb1"
       define_method(:install) do
         bin.install "newapi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Xbang0222/new-api-cli/releases/download/v0.1.0/new-api-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "2a5bce65b52e3906b5ec973c22ebc9ce8d33970f8eeb8f3755d0b0f3a82a818a"
+      url "https://github.com/Xbang0222/new-api-cli/releases/download/v0.1.1/new-api-cli_0.1.1_linux_arm64.tar.gz"
+      sha256 "ee42e872eb6aed06099acda4c185b0c58460b836963f693be5318fe5d9c60d1e"
       define_method(:install) do
         bin.install "newapi"
       end
